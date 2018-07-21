@@ -104,30 +104,37 @@ systemctl enable lis.service
 
 ###Método Post
 * /api/v1/register
->Inserta data json de atención (el formato ejemplo está contenido dentro de tests/test.json o revisar titulo **Formato JSON para INSERT (POST)**)
+
+    Inserta data json de atención (el formato ejemplo está contenido dentro de tests/test.json o revisar titulo **Formato JSON para INSERT (POST)**)
 
 ###Método Get
 * /api/v1/patient_name/(NOMBRE)
->Busca y devuelve atenciones por nombre o parte del nombre
+
+    Busca y devuelve atenciones por nombre o parte del nombre
 
 * /api/v1/patient_id/(DOC_ID)
->Busca y devuelve atenciones por DOC_ID
+
+    Busca y devuelve atenciones por DOC_ID
 
 ###Peticiones Estándares
 Estas peticiones HTTP sirven como ejemplo funcional de los webservices y su integración con aplicaciones externas
 
 * / o /index
->Página principal del servidor, para fines solo de validación de funcionamiento del servicio
+        
+    Página principal del servidor, para fines solo de validación de funcionamiento del servicio
 
 * /patient_studies
->URL que muestra los estudios de un determinado paciente y permite su apertura con el visualizador **oviyam2**, requiere los parámetros **patient_id** y **X-Api-Key**, ejemplo:
+
+    URL que muestra los estudios de un determinado paciente y permite su apertura con el visualizador **oviyam2**, requiere los parámetros **patient_id** y **X-Api-Key**, ejemplo:
 
     http://localhost:8899/patient_studies?patient_id=3705779-7&X-Api-Key=5954032458e83fc75abf23afd1c01ce3
 
 * /patient_studies_alternate
->URL que muestra los estudios de un determinado paciente y permite su apertura con el visualizador **dwv**, requiere los parámetros **patient_id** y **X-Api-Key**, ejemplo:
 
-    http://localhost:8899/patient_studies_alternate?patient_id=3705779-7&X-Api-Key=5954032458e83fc75abf23afd1c01ce3
+    URL que muestra los estudios de un determinado paciente y permite su apertura con el visualizador **dwv**, requiere los parámetros **patient_id** y **X-Api-Key**, ejemplo:
+```
+            http://localhost:8899/patient_studies_alternate?patient_id=3705779-7&X-Api-Key=5954032458e83fc75abf23afd1c01ce3
+```
 
 
 ##Seguridad
