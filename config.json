@@ -1,0 +1,26 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": "27017",
+    "user": "",
+    "password": "",
+    "name": "imaging_heading"
+  },
+  "indexes": {
+    "patient_id": true,
+    "study_suid": true,
+    "patient_name": true
+  },
+  "application": {
+    "port": 8899
+  },
+  "keys": [
+    "5954032458e83fc75abf23afd1c01ce1",
+    "5954032458e83fc75abf23afd1c01ce2"
+  ],
+  "viewer": "http://localhost8080/oviyam2/viewer.html?studyUID=",
+  "viewer_alternate": "http://localhost:8080/dwv/viewers/mobile/index.html?type=manifest&input=%2Fweasis-pacs-connector%2Fmanifest%3FstudyUID%3D",
+  "login": "http://localhost:8080/oviyam2",
+  "j_security": "http://localhost:8080/oviyam2/j_security_check",
+  "log_file_base": "imaging_heading.log"
+}

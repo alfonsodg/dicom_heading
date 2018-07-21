@@ -1,0 +1,13 @@
+{
+  "patient_pk":"2452",
+  "patient_id":"26267267-K",
+  "patient_name":"JOSE^PEREZ^PEREZ",
+  "study_pk":"27828",
+  "study_iuid":"1.2.392.200036.9125.2.108981091572126.64773651197.212434",
+  "study_datetime":"2015-03-22 00:53:17",
+  "study_description":"PRUEBA",
+  "study_modality":"CR",
+  "study_series":"5",
+  "study_instances":"5",
+  "center":""
+}

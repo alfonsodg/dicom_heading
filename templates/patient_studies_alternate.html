@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Studies</title>
+</head>
+  <body>
+    <h2>Patient: {{patient_id}} {{patient_name}}</h2>
+       <ul>
+       {% for item in items %}
+           <li><a href="{{viewer}}{{item['study_iuid']}}">{{ item['study_datetime']}}</a></li>
+       {% end %}
+     </ul>
+  </body>
+</html>

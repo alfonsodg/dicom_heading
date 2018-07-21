@@ -1,0 +1,12 @@
+#/etc/systemd/system/dicom_heading.service
+
+[Unit]
+Description = Dicom Heading Service
+After = network.target
+
+[Service]
+WorkingDirectory = /srv/dicom_heading
+ExecStart = /srv/dicom_heading/server.py
+
+[Install]
+WantedBy = multi-user.target
